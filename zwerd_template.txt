@@ -1,5 +1,4 @@
 # Zwerd Penetration Testing Report Template
-
 ## General Information
 
 Date of Test:  
@@ -8,7 +7,6 @@ Client Name:
 Client Contact Information:  
 
 =========================================================================
-
 ## System Information
 
 Operating System:  
@@ -17,168 +15,61 @@ Hostname:
 IP Address:  
 
 =========================================================================
-
 ## Users and Credentials
 
 USERS:
 
-| Username | Role | Notes |
-|----------|------|-------|
-|          |      |       |
-
 CREDENTIALS:
 
-| Username | Password | Notes |
-|----------|----------|-------|
-|          |          |       |
 
 Tools for User and Password Cracking/Brute Forcing: 
-- Hydra
-- John the Ripper
-- Hashcat
-- Medusa
-- Ncrack
-- THC-Hydra
-- Ophcrack
-- Brutus
-- Cain and Abel
-- Mimikatz
-- Burp Suite Intruder
-- CrackStation
-- Patator
-- CeWL
-- Aircrack-ng
-
+Hydra,John the Ripper,Hashcat,Medusa,Ncrack,THC-Hydra,Ophcrack,CrackStation,Brutus,Cain and Abel,Mimikatz
+Burp Suite Intruder,CrackStation,Patator,CeWL,Aircrack-ng
 =========================================================================
-
 ## To-Try List
 
-- List potential attack vectors
-- Enumerate services to investigate further
-- Identify untested areas
 
-Tools: 
-- Burp Suite
-- ZAP (Zed Attack Proxy)
-- Metasploit
-- Nessus
-- OpenVAS
-- Recon-ng
-- SpiderFoot
-- Amass
-- Sublist3r
-- theHarvester
-- Maltego
-- Shodan
-- Censys
-- OSINT Framework
-- FOCA
 
 =========================================================================
-
 ## Nmap Results
+
+
+
 Tools: 
-- nmap
-- masscan
-- Zenmap
-- RustScan
-- Unicornscan
-- AutoRecon
-- Amap
-- Netcat
-- hping3
-- Nping
-- Sparta
-- Angry IP Scanner
-- p0f
-- ZMap
-- Ndiff
+nmap,masscan,Zenmap,RustScan,Unicornscan,Amap,Netcat,hping3,Nping,Sparta,Angry IP Scanner
+p0f,ZMap,Ndiff
 
 Summary:
-
 - Scan Type: (e.g., Full Scan, Top Ports)
-- Command Used: nmap -A -T4 <target>
-- Key Findings:
-
-Detailed Results:
-
-| Port | Service | Version | State | Notes |
-|------|---------|---------|-------|-------|
-|      |         |         |       |       |
-
+- Command Used: nmap -sC -sV -A -T4 <target> --open
 =========================================================================
-
 ## Web Services Enumeration
+
+
+
 Tools: 
-- nikto
-- feroxbuster
-- wfuzz
-- gobuster
-- dirb
-- Burp Suite
-- OWASP ZAP
-- wpscan
-- WhatWeb
-- httprint
-- WebRecon
-- Arachni
-- Aquatone
-- Eyewitness
-- Sublist3r
-- theHarvester
-- Shodan
-- Censys
+nikto,feroxbuster,wfuzz,gobuster,dirb,Burp Suite,OWASP ZAP,wpscan,WhatWeb,webtech,webwnum
+httprint,Arachni,Aquatone,Eyewitness,Sublist3r,theHarvester,Shodan,Censys
 
 Overview:
-
 - Web Server: (e.g., Apache, Nginx)
 - Frameworks: (e.g., Django, Laravel)
 - CMS: (e.g., WordPress, Joomla)
-- Subdomains: 
-
-Detailed Findings:
-
-| Endpoint | Vulnerability | Description | Severity | Remediation |
-|----------|---------------|-------------|----------|-------------|
-|          |               |             |          |             |
-
 =========================================================================
-
 ## Other Services and Privilege Escalation
+
+
+
 Tools: 
-- enum4linux
-- smbclient
-- winpeas
-- linpeas
-- GTFOBins
-- PowerSploit
-- BloodHound
-- PowerUp
-- Linux Exploit Suggester
-- Windows Exploit Suggester
-- ExploitDB
-- SUDO_KILLER
-- PSPY
-- PEDA
-- BeRoot
-- SecLists
-- VulnHub
-
-Network Services:
-
-| Service | Vulnerability | Description | Severity | Remediation |
-|---------|---------------|-------------|----------|-------------|
-|         |               |             |          |             |
+enum4linux, smbclient,winpeas,linpeas,GTFOBins,PowerSploit,powerview,BloodHound,PowerUp,Linux Exploit Suggester
+Windows Exploit Suggester,ExploitDB(searchsploit),SUDO_KILLER,PSPY,PEDA,BeRoot,SecLists,VulnHub
 
 Privilege Escalation Findings:
-
 - Technique: (e.g., Exploiting SUID files, Kernel Exploit)
 - Description: 
 - Severity: 
 - Remediation: 
-
 =========================================================================
-
 ## Takeaway Concepts
 
 Key Findings:
